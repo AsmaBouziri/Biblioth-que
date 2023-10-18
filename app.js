@@ -77,7 +77,7 @@ app.get("/api/Books/id/:id", (req, res) => {
         });
       } else {
         res.status(200).json({
-          model: book,
+          Livre: book,
           message: "livre trouvé!",
         });
       }
@@ -121,7 +121,7 @@ app.patch("/api/Books/update/:id", (req, res) => {
         });
       } else {
         res.status(200).json({
-          model: book,
+          Livre: book,
           message: "livre modifié!",
         });
       }
