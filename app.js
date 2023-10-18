@@ -89,6 +89,7 @@ app.get("/api/Books/id/:id", (req, res) => {
       });
     });
 });
+/*Afficher les livres selon nom auteur*/
 app.get("/api/Books/auteur/:nom", (req, res) => {
   Book.find({ "auteur.Nom": req.params.nom })
     .then((livres) => {
